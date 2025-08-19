@@ -2,8 +2,8 @@
 
 
 const subTitle = "Online education";
-const title = <h2 className="title"><span className="d-lg-block">Learn The</span> Skills You Need <span className="d-lg-block">To Succeed</span></h2>;
-const desc = "Free online courses from the world’s Leading experts. join 18+ million Learners today.";
+const title = <h2 className="title"><span className="d-lg-block">"Igniting a Culture of Originality — </span> 1000 Innovations,<span className="d-lg-block">Infinite Possibilities"</span></h2>;
+const desc = "A 5-year journey to empower TLCians with protected Intellectual Property that builds recognition, brand value, and strategic strength. ";
 
 
 const catagoryList = [

@@ -37,7 +37,12 @@ function App() {
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
+			 {/* <div className="bg-red-500 text-white text-3xl p-6 rounded-xl">
+      🚀 Tailwind Working!
+    </div> */}
+			
 			<Routes>
+				
 				<Route path="/" element={<Home />} />
 				<Route path="index-2" element={<HomeTwo />} />
 				<Route path="index-3" element={<HomeThree />} />

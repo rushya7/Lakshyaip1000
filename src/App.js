@@ -32,6 +32,7 @@ import TeamPage from "./page/team";
 import TeamSingle from "./page/team-single";
 
 import AdminUserCreation from './forms/AdminUserCreation';
+import Nda from "./page/nda";
 
 function App() {
 	return (
@@ -72,6 +73,7 @@ function App() {
 				<Route path="/admin-create-user" element={<AdminUserCreation />} />
 				<Route path="forgetpass" element={<ForgetPass />} />
 				<Route path="*" element={<ErrorPage />} />
+				<Route path="/nda" element={<Nda />} />
 			</Routes>
 		</BrowserRouter>
 	);

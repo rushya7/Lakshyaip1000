@@ -51,27 +51,26 @@ const Header = () => {
 
                         </div>
 
-                       <ul className="flex items-center gap-6">
-  {socialList.map((val, i) => (
-    <li key={i}>
-      <a
-        href={val.siteLink}
-        target="_blank"
-        rel="noreferrer"
-        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-blue-500 hover:text-white transition"
-      >
-        {val.icon}
+                        <ul className="flex items-center gap-6">
+                            {socialList.map((val, i) => (
+                                <li key={i}>
+                                    <a
+                                        href={val.siteLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="flex items-center gap-2 px-3 py-2 rounded-full hover:bg-blue-500 hover:text-white transition"
+                                    >
+                                        {val.icon}
 
-        {/* YouTube साठी subscribe दाखवायचं */}
-        {val.siteLink.includes("youtube.com") && (
-          <span className="ml-2 text-sm font-semibold text-red-500">
-            Subscribe
-          </span>
-        )}
-      </a>
-    </li>
-  ))}
-</ul>
+                                        {val.siteLink.includes("youtube.com") && (
+                                            <span className="ml-2 text-sm font-semibold text-red-500">
+                                                Subscribe
+                                            </span>
+                                        )}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
 
                     </div>
                 </div>
@@ -100,14 +99,16 @@ const Header = () => {
                                     <li className="menu-item-has-children">
                                         <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Knowledge Bank</a>
                                         <ul className="lab-ul dropdown-menu">
-                                            <li><NavLink to="#/course">Patent</NavLink></li>
-                                            <li><NavLink to="#/course-single">Design</NavLink></li>
-                                            <li><NavLink to="#/course-view">Trademark</NavLink></li>
-                                            <li><NavLink to="#/course-view">Copyright</NavLink></li>
-                                            <li><NavLink to="#/course-view">FTO</NavLink></li>
-                                            <li><NavLink to="#/course-view">Government Scheme</NavLink></li>
-                                            <li><NavLink to="#/course-view">Internal Filling</NavLink></li>
-                                            <li><NavLink to="#/course-view"> IP Audit </NavLink></li>
+                                            <li><NavLink to="/course">Patent</NavLink></li>
+                                            <li><NavLink to="/course-single">Design</NavLink></li>
+                                            <li><NavLink to="/course-view">Trademark</NavLink></li>
+                                            <li><NavLink to="/course-view">Copyright</NavLink></li>
+                                            <li><NavLink to="/course-view">FTO</NavLink></li>
+                                            <li><NavLink to="/course-view">Government Scheme</NavLink></li>
+                                            <li><NavLink to="/course-view">Internal Filling</NavLink></li>
+                                            <li><NavLink to="/course-view"> IP Audit </NavLink></li>
+                                            <li><NavLink to="/nda"> NDA </NavLink></li>
+
                                         </ul>
                                     </li>
                                     <li className="menu-item-has-children">

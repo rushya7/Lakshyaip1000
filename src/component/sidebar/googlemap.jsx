@@ -6,7 +6,7 @@ const GoogleMap = () => {
       {/* Left Side: Google Map */}
       <div className="w-full md:w-1/2 h-[450px]">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14243.043590184121!2d74.58496949686337!3d16.851370778417824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1187a66b09f1d%3A0x475c75a8c598fbcd!2sMedPlus!5e0!3m2!1sen!2sin!4v1755583152544!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.496309535975!2d74.58196007367525!3d16.851325818029636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc12327c1ce031f%3A0x610b3bb7dc978480!2sMYCrave%20Consultancy%20And%20Services%20MH!5e0!3m2!1sen!2sin!4v1755694886610!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}

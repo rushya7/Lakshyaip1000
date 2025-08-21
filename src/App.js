@@ -33,14 +33,14 @@ import TeamSingle from "./page/team-single";
 
 import AdminUserCreation from './forms/AdminUserCreation';
 import Nda from "./page/nda";
+import Trademark from "./page/Trademark"; // Importing the Trademark component
+import Copyright from "./page/Copyright"; // Importing the Copyright component
 
 function App() {
 	return (
 		<BrowserRouter>
 			<ScrollToTop />
-			 {/* <div className="bg-red-500 text-white text-3xl p-6 rounded-xl">
-      🚀 Tailwind Working!
-    </div> */}
+			
 			
 			<Routes>
 				
@@ -74,6 +74,9 @@ function App() {
 				<Route path="forgetpass" element={<ForgetPass />} />
 				<Route path="*" element={<ErrorPage />} />
 				<Route path="/nda" element={<Nda />} />
+				<Route path="/trademark" element={<Trademark />} /> {/* Adding Trademark route */}
+			    <Route path="/copyright" element={<Copyright />} /> {/* Adding Copyright route */}
+
 			</Routes>
 		</BrowserRouter>
 	);

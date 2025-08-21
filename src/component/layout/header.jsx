@@ -79,10 +79,14 @@ const Header = () => {
                 <div className="container">
                     <div className="header-wrapper">
                         <div className="logo">
-                            <Link to="/"><img src="assets/images/logo/01.png" alt="logo" /></Link>
+                            <Link to="/">
+                                <img src="assets/images/logo/01.png" alt="logo" style={{ width: "130px", height: "auto" }} />
+                            </Link>
                         </div>
+
                         <div className="menu-area">
                             <div className="menu">
+                                
                                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
                                     <li className="menu-item-has-children">
                                         <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Home</a>
@@ -101,8 +105,8 @@ const Header = () => {
                                         <ul className="lab-ul dropdown-menu">
                                             <li><NavLink to="/course">Patent</NavLink></li>
                                             <li><NavLink to="/course-single">Design</NavLink></li>
-                                            <li><NavLink to="/course-view">Trademark</NavLink></li>
-                                            <li><NavLink to="/course-view">Copyright</NavLink></li>
+                                            <li><NavLink to="/trademark">Trademark</NavLink></li>
+                                            <li><NavLink to="/copyright">Copyright</NavLink></li>
                                             <li><NavLink to="/course-view">FTO</NavLink></li>
                                             <li><NavLink to="/course-view">Government Scheme</NavLink></li>
                                             <li><NavLink to="/course-view">Internal Filling</NavLink></li>

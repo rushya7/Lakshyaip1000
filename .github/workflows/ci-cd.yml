@@ -3,7 +3,7 @@ name: CI / CD Pipeline
 on:
   push:
     branches:
-      - main         # main शाखेत code push झाल्यावर trigger होईल
+      - main         
   pull_request:
     branches:
       - main

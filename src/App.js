@@ -36,6 +36,9 @@ import Nda from "./page/nda";
 import Trademark from "./page/Trademark"; // Importing the Trademark component
 import Copyright from "./page/Copyright"; // Importing the Copyright component
 
+import EventGallery from "./component/section/EventGallery";
+
+
 function App() {
 	return (
 		<BrowserRouter>
@@ -54,7 +57,7 @@ function App() {
 				<Route path="course" element={<CoursePage />} />
 				<Route path="course-single" element={<CourseSingle />} />
 				<Route path="course-view" element={<CourseView />} />
-				<Route path="blog" element={<BlogPage />} />
+				<Route path="blog" element={<EventGallery />} />
 				<Route path="blog-2" element={<BlogPageTwo />} />
 				<Route path="blog-3" element={<BlogPageThree />} />
 				<Route path="blog-single" element={<BlogSingle />} />

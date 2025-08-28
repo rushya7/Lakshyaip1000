@@ -1,174 +1,289 @@
-import { Component, Fragment } from "react";
+
+import React from "react";
+import { Home, Info, FileText, HelpCircle } from "lucide-react"; // icons
 import { Link } from "react-router-dom";
-import Footer from "../component/layout/footer";
 import Header from "../component/layout/header";
 import PageHeader from "../component/layout/pageheader";
-import GroupSelect from "../component/sidebar/group-select";
-import Pagination from "../component/sidebar/pagination";
-import Rating from "../component/sidebar/rating";
-import SkillSelect from "../component/sidebar/skill-select";
+import Footer from "../component/layout/footer";
+import "../assets/css/Copyright.css";
 
 
 
-const courseList = [
-    {
-        imgUrl: 'assets/images/course/01.jpg',
-        imgAlt: 'course rajibraj91 rajibraj',
-        price: '$30',
-        cate: 'Adobe XD',
-        reviewCount: '03 reviews',
-        title: 'Fundamentals of Adobe XD Theory Learn New',
-        totalLeson: '18x Lesson',
-        schdule: 'Online Class',
-        authorImgUrl: 'assets/images/course/author/01.jpg',
-        authorImgAlt: 'course author rajibraj91 rajibraj',
-        authorName: 'William Smith',
-        btnText: 'Read More',
-    },
-    {
-        imgUrl: 'assets/images/course/02.jpg',
-        imgAlt: 'course rajibraj91 rajibraj',
-        price: '$30',
-        cate: 'Adobe XD',
-        reviewCount: '03 reviews',
-        title: 'Certified Graphic Design with Free Project Course',
-        totalLeson: '18x Lesson',
-        schdule: 'Online Class',
-        authorImgUrl: 'assets/images/course/author/02.jpg',
-        authorImgAlt: 'course author rajibraj91 rajibraj',
-        authorName: 'Lora Smith',
-        btnText: 'Read More',
-    },
-    {
-        imgUrl: 'assets/images/course/03.jpg',
-        imgAlt: 'course rajibraj91 rajibraj',
-        price: '$30',
-        cate: 'Adobe XD',
-        reviewCount: '03 reviews',
-        title: 'Theory Learn New Student And Fundamentals',
-        totalLeson: '18x Lesson',
-        schdule: 'Online Class',
-        authorImgUrl: 'assets/images/course/author/03.jpg',
-        authorImgAlt: 'course author rajibraj91 rajibraj',
-        authorName: 'Robot Smith',
-        btnText: 'Read More',
-    },
-    {
-        imgUrl: 'assets/images/course/04.jpg',
-        imgAlt: 'course rajibraj91 rajibraj',
-        price: '$30',
-        cate: 'Adobe XD',
-        reviewCount: '03 reviews',
-        title: 'Computer Fundamentals Basic Startup Ultricies Vitae',
-        totalLeson: '18x Lesson',
-        schdule: 'Online Class',
-        authorImgUrl: 'assets/images/course/author/04.jpg',
-        authorImgAlt: 'course author rajibraj91 rajibraj',
-        authorName: 'Zinat Zaara',
-        btnText: 'Read More',
-    },
-    {
-        imgUrl: 'assets/images/course/05.jpg',
-        imgAlt: 'course rajibraj91 rajibraj',
-        price: '$30',
-        cate: 'Adobe XD',
-        reviewCount: '03 reviews',
-        title: 'Boozy Halloween Drinks for the Grown Eleifend Kuismod',
-        totalLeson: '18x Lesson',
-        schdule: 'Online Class',
-        authorImgUrl: 'assets/images/course/author/05.jpg',
-        authorImgAlt: 'course author rajibraj91 rajibraj',
-        authorName: 'Rajib Raj',
-        btnText: 'Read More',
-    },
-    {
-        imgUrl: 'assets/images/course/06.jpg',
-        imgAlt: 'course rajibraj91 rajibraj',
-        price: '$30',
-        cate: 'Adobe XD',
-        reviewCount: '03 reviews',
-        title: 'Student Want to Learn About Science And Arts',
-        totalLeson: '18x Lesson',
-        schdule: 'Online Class',
-        authorImgUrl: 'assets/images/course/author/06.jpg',
-        authorImgAlt: 'course author rajibraj91 rajibraj',
-        authorName: 'Angel Mili',
-        btnText: 'Read More',
-    },
-]
+
+const title = "Patent";
+
+const Patent = () => {
+  return (
+    <>
+      <Header />
+      <PageHeader title={title} curPage={"Patent"} />
+
+      <div className="min-h-screen flex flex-col md:flex-row bg-white bg-opacity-10">
+
+        {/* Main Content */}
+        <main className=" font-sans flex-1 p-4 sm:p-6 md:p-10 flex justify-center">
+          <div className="w-full max-w-md sm:max-w-lg md:max-w-4xl lg:max-w-6xl">
+
+            {/* Title */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-black text-center">
+              Patent
+            </h1>
+
+            {/* Description */}
+            <div className="bg-white text-black p-8 leading-relaxed">
+              <h1 className="text-3xl font-bold mb-6">Introduction – Why Patents Matter </h1>
+
+              <p className="mb-4">
+                IIn today’s fast-moving world, innovation is the key to growth. Whether you are a small manufacturer, a startup, or an established industry player, your ability to create new products, technologies, or processes gives you an advantage over competitors. But innovation alone is not enough—you need a way to protect your ideas so that others do not copy or misuse them. This is where patents come in.     </p>
+
+              <p className="mb-4"> A patent is a legal right granted by the government that gives the inventor exclusive ownership of their invention for a fixed period. In simple terms, a patent acts like a protective shield—it ensures that only you (or those you authorize) can make, use, sell, or license your invention. Without a patent, anyone could freely copy your idea and benefit from your hard work, leaving you with little to gain.</p>
+
+              <p className="mb-4">For small enterprises and industry owners, patents are more than just legal documents—they are business assets. A strong patent can:</p>
+              <p className="answer">
+                  <li> Increase the market value of your company </li>
+                  <li> Attract investors and business partners</li>
+                  <li> Help in branding and marketing your products as “unique”</li>
+                  <li> Provide a steady income source through licensing</li>
+                  <li> Strengthen your position in competitive markets</li>  <br />
+                </p>
+
+               <p className="mb-4">In countries like India, where industries are rapidly growing and competition is high, protecting intellectual property (IP) is no longer optional—it is a necessity for survival and growth. By understanding patents, you are not only protecting your ideas but also ensuring long-term success for your business. </p> 
+
+               <p className="mb-4"> In this Q&A guide, we will answer common questions about patents—what they are, how to apply, costs, benefits, myths, and much more—in a simple way so that even non-legal professionals can understand and use the information effectively. </p>
 
 
-const CoursePage = () => {
-    return (
-        <Fragment>
-            <Header />
-            <PageHeader title={'Archives: Courses'} curPage={'Course Page'} />
-            <GroupSelect />
-            <div className="course-section padding-tb section-bg">
-                <div className="container">
-                    <div className="section-wrapper">
-                        <div className="course-showing-part">
-                            <div className="d-flex flex-wrap align-items-center justify-content-between">
-                                <div className="course-showing-part-left">
-                                    <p>Showing 1-6 of 10 results</p>
-                                </div>
-                                <div className="course-showing-part-right d-flex flex-wrap align-items-center">
-                                    <span>Sort by :</span>
-                                    <div className="select-item">
-                                        <SkillSelect select={'all'} />
-                                        <div className="select-icon">
-                                            <i className="icofont-rounded-down"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row g-4 justify-content-center row-cols-xl-3 row-cols-md-2 row-cols-1">
-                            {courseList.map((val, i) => (
-                                <div className="col" key={i}>
-                                    <div className="course-item">
-                                        <div className="course-inner">
-                                            <div className="course-thumb">
-                                                <img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} />
-                                            </div>
-                                            <div className="course-content">
-                                                <div className="course-price">{val.price}</div>
-                                                <div className="course-category">
-                                                    <div className="course-cate">
-                                                        <a href="#">{val.cate}</a>
-                                                    </div>
-                                                    <div className="course-reiew">
-                                                        <Rating />
-                                                        <span className="ratting-count"> {val.reviewCount}</span>
-                                                    </div>
-                                                </div>
-                                                <Link to="/course-single"><h4>{val.title}</h4></Link>
-                                                <div className="course-details">
-                                                    <div className="couse-count"><i className="icofont-video-alt"></i> {val.totalLeson}</div>
-                                                    <div className="couse-topic"><i className="icofont-signal"></i> {val.schdule}</div>
-                                                </div>
-                                                <div className="course-footer">
-                                                    <div className="course-author">
-                                                        <img src={`${val.authorImgUrl}`} alt={`${val.authorImgAlt}`} />
-                                                        <Link to="/team-single" className="ca-name">{val.authorName}</Link>
-                                                    </div>
-                                                    <div className="course-btn">
-                                                        <Link to="/course-single" className="lab-btn-text">{val.btnText} <i className="icofont-external-link"></i></Link>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <Pagination />
-                    </div>
-                </div>
+
             </div>
-            <Footer />
-        </Fragment>
-    );
-}
- 
-export default CoursePage;
+            <div className="copyright-article">
+              <h1>TREADMARK – Questions & Answers</h1>
+
+              {/* Q1 */}
+              <div className="qa-block">
+                <h3 className="question">Q1: What is a Trademark?</h3>
+                <p className="answer">A trademark is a unique sign, symbol, word, phrase, design, or combination thereof that distinguishes one company’s goods or services from those of others.</p>
+              </div>
+
+              {/* Q2 */}
+              <div className="qa-block">
+                <h3 className="question">Q2: Who Can Apply for a Trademark?</h3>
+                <p className="answer">
+                  <li> Any individual, business, or organization using a mark to identify goods/services.</li>
+                  <li> Startups can apply even before launching products (“proposed to be used” trademarks).</li>
+                </p>
+              </div>
+
+              {/* Q3 */}
+              <div className="qa-block">
+                <h3 className="question">Q3: What Cannot Be Protected by Copyright?What Can Be Trademarked?</h3>
+                <ul className="answer">
+                  <li>Names & brand names (Pepsi, Tata, Infosys).</li>
+                  <li>Logos & symbols (Nike swoosh, McDonald’s arches).</li>
+                  <li>Taglines & slogans (“Just Do It”, “Because You’re Worth It”).</li>
+                  <li>Shapes & packaging (Coca-Cola bottle shape).</li>
+                  <li>Sounds & jingles (Nokia tune, MGM lion’s roar)..</li>
+                  <li>Colors & combinations (Cadbury purple)..</li>
+                </ul>
+              </div>
+
+              {/* Q4 */}
+              <div className="qa-block">
+                <h3 className="question">Q4: What Cannot Be Trademarked?</h3>
+                <ul className="answer">
+                  <li>Generic terms (e.g., “milk” for dairy products).</li>
+                  <li>Descriptive words (e.g., “sweet” for sugar).</li>
+                  <li>Offensive/immoral words or symbols.</li>
+                  <li>National symbols, flags, or government insignia.</li>
+                  <li>Identical or confusingly similar marks to existing ones.</li>
+                </ul>
+              </div>
+
+              {/* Q5 */}
+              <div className="qa-block">
+                <h3 className="question">Q5:Duration of Trademark Protection</h3>
+                <ul className="answer">
+                  <li>In most countries, trademarks last for 10 years from registration and can be renewed indefinitely as long as they are in use.</li>
+                  <li>Example: Coca-Cola’s trademark has been renewed for over 100 years.</li>
+                </ul>
+              </div>
+
+              {/* Q6 */}
+              <div className="qa-block">
+                <h3 className="question">Q6: Difference Between Trademark, Patent, and Copyright?</h3>
+                <ul className="answer">
+                  <li>Trademark → Protects brand identity (logos, names, symbols).</li>
+                  <li>Patent → Protects inventions and technical innovations..</li>
+                  <li>Copyright → Protects creative expressions (books, music, films, software).</li>
+                </ul>
+              </div>
+
+              {/* Q7 */}
+              <div className="qa-block">
+                <h3 className="question">Q7:How to Apply for a Trademark?</h3>
+                <ul className="answer">
+                  <li>Search & Clearance – Before filing, conduct a trademark search to ensure no similar mark exists.</li>
+                  <li>Application Filing – File online/offline with details of applicant, mark, and class of goods/services.</li>
+                  <li>Examination – Trademark office examines for distinctiveness and conflicts.</li>
+                  <li>Publication – Accepted marks are published in the Trademark Journal for objections.</li>
+                  <li>Opposition Period – If no objection within 4 months, the mark proceeds.</li>
+                  <li>Registration – Certificate issued, and ® symbol can be used.</li>
+                </ul>
+              </div>
+
+              {/* Q8 */}
+              <div className="qa-block">
+                <h3 className="question">Q8:What Documents Are Required?</h3>
+                <ul className="answer">
+                  <li>Application form.</li>
+                  <li>Logo (if any).</li>
+                  <li>Proof of business (partnership deed, incorporation certificate, GST).</li>
+                  <li>Identity proof of applicant.</li>
+                  <li>Power of Attorney if filed through agent/lawyer.</li>
+                </ul>
+              </div>
+
+              {/* Q9 */}
+              <div className="qa-block">
+                <h3 className="question">Q9: Costs Involved?</h3>
+                <ul className="answer">
+                  <li>In India: ₹4,500 (individual/startup/SME) or ₹9,000 (companies) per class.</li>
+                  <li>In the U.S.: $250–$350 per class.</li>
+                  <li>In EU: €850 for one class, €50 each additional class.</li>
+                </ul>
+              </div>
+
+              {/* Q10 */}
+              <div className="qa-block">
+                <h3 className="question">Q10:Steps & Timeline?</h3>
+                <ul className="answer">
+                  <li>Filing → 1 day.</li>
+                  <li>Examination → 3–6 months.</li>
+                  <li>Publication → 4 months.</li>
+                  <li>Opposition → If none, registration within 6–12 months.</li>
+                  <li>Entire process may take 12–18 months.</li>
+                </ul>
+              </div>
+
+              {/* Q11 */}
+              <div className="qa-block">
+                <h3 className="question">Q11: Do You Need to Register to Get Protection?</h3>
+                <p className="answer">
+                  •	Common law rights exist just by using the trademark (™ symbol).<br />
+                  •	But registration (® symbol) provides:
+
+                </p>
+                <ul className="answer">
+                  <li>o	Nationwide legal protection.</li>
+                  <li>o	Stronger enforcement in courts.</li>
+                  <li>o	Public record of ownership.</li>
+                </ul>
+              </div>
+
+              {/* Q12 */}
+              <div className="qa-block">
+                <h3 className="question">Q12: Iternational Protection of Trademarks?</h3>
+                <p className="answer">
+                  •	Trademarks are territorial (valid only in the country of registration). <br />
+                  •	For global protection:
+                </p>
+                <ul className="answer">
+                  <li>o	Madrid Protocol – Single application valid in 130+ member countries.</li>
+                  <li>o	Separate filings in countries not part of Madrid.</li>
+                </ul>
+              </div>
+
+              {/* Q13 */}
+              <div className="qa-block">
+                <h3 className="question">Q13: Trademark Infringement & Penalties?</h3>
+                <ul className="answer">
+                  <li>Infringement occurs when another person uses an identical or deceptively similar mark for similar goods/services.</li>
+                  <li>Penalties include injunction, damages, destruction of counterfeit goods, and sometimes criminal liability.</li>
+                  <li>Example: Selling fake Adidas shoes with a similar logo = infringement.</li>
+                </ul>
+              </div>
+
+              {/* Q14 */}
+              <div className="qa-block">
+                <h3 className="question">Q14: How to Avoid Infringing Others’ Trademarks?</h3>
+
+                <ul className="answer">
+                  <li>	Always do a trademark search before launching a brand.</li>
+                  <li>Avoid copying names/logos similar to famous brands.</li>
+                  <li>Consult an IP lawyer for clearance.</li>
+                </ul>
+              </div>
+
+              {/* Q15*/}
+              <div className="qa-block">
+                <h3 className="question">Q15: Licensing & Assignment</h3>
+
+                <ul className="answer">
+                  <li>Licensing → The owner permits another to use the trademark under defined conditions.</li>
+                  <li>Assignment → Permanent transfer of ownership rights.</li>
+                </ul>
+              </div>
+
+              {/* Q16*/}
+              <div className="qa-block">
+                <h3 className="question">Q16: Commercialization of Trademarks?</h3>
+
+                <ul className="answer">
+                  <li>Franchising (e.g., McDonald’s, Subway).</li>
+                  <li>Merchandising (Disney characters on products).</li>
+                  <li>Co-branding & collaborations.</li>
+                  <li>Brand valuation for investment.</li>
+                </ul>
+              </div>
+
+              {/* Q17*/}
+              <div className="qa-block">
+                <h3 className="question">Q17: Types of Trademarks & Scope of Protection</h3>
+
+                <ul className="answer">
+                  <li>1.	Word Marks – Business name (Google, Infosys).</li>
+                  <li>2.	Logo/Device Marks – Visual design (Apple logo).</li>
+                  <li>3.	Taglines – “Connecting People” (Nokia).</li>
+                  <li>4.	Shape Marks – Coca-Cola bottle.</li>
+                  <li>5.	Sound Marks – Intel chime.</li>
+                  <li>6.	Color Marks – Tiffany blue.</li>
+                  <li>7.	Collective Marks – Used by association members (CA Institute logo).</li>
+                  <li>8.	Certification Marks – Quality standards (ISI, AGMARK).</li>
+                </ul>
+                <div className="example">
+                  👉 Scope: Trademarks protect against unauthorized commercial use, but not against fair use (comparisons, academic references).
+                </div>
+
+
+                <div className="qa-block">
+                  <h3 className="question">Q18: Myths & Misconceptions About Trademarks</h3>
+
+                  <ul className="answer">
+                    <li>•  Myth 1: “Trademark registration is only for big companies.”</li>
+                    <li>•	✅ Reality: SMEs and startups benefit most, as it protects their brand early.</li>
+                    <li>•  Myth 2: “Registration is valid worldwide.”</li>
+                    <li>•	✅ Reality: Trademarks are territorial; separate applications are needed abroad.</li>
+                    <li>•  Myth 3: “Once registered, you’re protected forever.”</li>
+                    <li>•	✅ Reality: You must renew every 10 years and keep using the mark.</li>
+                    <li>•  Myth 4: “Changing font or color avoids infringement.”</li>
+                    <li>•	✅ Reality: Even minor similarity can still be infringement.</li>
+                  </ul>
+                  <div className="bg-white text-black p-8 leading-relaxed">
+                    <h1 className="text-3xl font-bold mb-6">Conclusion </h1>
+
+                    <p className="mb-4">
+                      Trademarks are not just legal rights—they are business growth tools. A strong brand, backed by registered trademark protection, enhances credibility, customer trust, and market value. For entrepreneurs, securing a trademark early prevents disputes, saves costs, and adds long-term stability.
+                         </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <Footer />
+    </>
+  );
+
+};
+
+export default Patent;
+

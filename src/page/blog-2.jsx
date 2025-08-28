@@ -161,66 +161,14 @@ let blogList = [
 
 
 const BlogPageTwo = () => {
-    return ( 
+    return (
         <Fragment>
             <Header />
             <PageHeader title={'Our Blog Classic Posts'} curPage={'Blog classic'} />
-            <div className="blog-section padding-tb section-bg">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-lg-8 col-12">
-                            <article>
-                                <div className="section-wrapper">
-                                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-2 justify-content-center g-4">
-                                        {blogList.map((val, i) => (
-                                            <div className="col" key={i}>
-                                                <div className="post-item">
-                                                    <div className="post-inner">
-                                                        <div className="post-thumb">
-                                                            <Link to="/blog-single"><img src={`${val.imgUrl}`} alt={`${val.imgAlt}`} /></Link>
-                                                        </div>
-                                                        <div className="post-content">
-                                                            <Link to="/blog-single"><h4>{val.title}</h4></Link>
-                                                            <div className="meta-post">
-                                                                <ul className="lab-ul">
-                                                                    {val.metaList.map((val, i) => (
-                                                                        <li key={i}><i className={val.iconName}></i>{val.text}</li>
-                                                                    ))}
-                                                                </ul>
-                                                            </div>
-                                                            <p>{val.desc}</p>
-                                                        </div>
-                                                        <div className="post-footer">
-                                                            <div className="pf-left">
-                                                                <Link to="/blog-single" className="lab-btn-text">{val.btnText} <i className="icofont-external-link"></i></Link>
-                                                            </div>
-                                                            <div className="pf-right">
-                                                                <i className="icofont-comment"></i>
-                                                                <span className="comment-count">{val.commentCount}</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
-                                    </div>
-                                    <Pagination />
-                                </div>
-                            </article>
-                        </div>
-                        <div className="col-lg-4 col-12">
-                            <aside>
-                                <Search />
-                                <PostCategory />
-                                <PopularPost />
-                                <Archive />
-                                <Instagram />
-                                <Tags />
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <h1 className="text-5xl font-bold text-center text-blue-600 my-8 drop-shadow-lg">
+                Event Details </h1>
+
             <Footer />
         </Fragment>
     );

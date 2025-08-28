@@ -15,20 +15,79 @@ function LeadNDA() {
         formState: { errors },
     } = useForm();
 
-    const onSubmit = (data) => {
-        console.log("Form Data:", data);
-    };
+    const onSubmit = async (data) => {
+  try {
+    const res = await fetch("http://localhost:5000/api/nda", {
+  method: "POST",
+  headers: { 
+    "Content-Type": "application/json",
+    "Authorization": `Bearer ${localStorage.getItem("token")}` // send token
+  },
+  body: JSON.stringify(data),
+});
 
-    const handleDownload = () => {
-        const doc = new jsPDF();
+    const result = await res.json();
+    if (res.ok) {
+      alert("NDA submitted successfully!");
+      console.log("Server Response:", result);
+    } else {
+      alert(result.error || "Submission failed");
+    }
+  } catch (err) {
+    console.error("Error submitting NDA:", err);
+    alert("Something went wrong. Please try again.");
+  }
+};
 
-        // Get the NDA content from the div
-        const ndaContent = document.querySelector(".terms-box").innerText;
 
-        doc.setFontSize(12);
-        doc.text(ndaContent, 10, 10, { maxWidth: 190 }); // wrap text within page width
-        doc.save("NDA_Form.pdf");
-    };
+const handleDownload = () => {
+  const doc = new jsPDF();
+  let y = 10;
+
+  const firstName = document.querySelector('input[name="firstName"]').value;
+  const lastName = document.querySelector('input[name="lastName"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const companyName = document.querySelector('input[name="companyName"]').value;
+  const city = document.querySelector('input[name="city"]').value;
+  const state = document.querySelector('input[name="state"]').value;
+  const country = document.querySelector('input[name="country"]').value;
+  const pincode = document.querySelector('input[name="pincode"]').value;
+  const agree = document.querySelector('input[name="agree"]').checked ? "Yes" : "No";
+
+  const submittedOn = new Date().toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" });
+
+  doc.setFontSize(14);
+  doc.text("NDA Submission Details", 10, y);
+  y += 10;
+
+  doc.setFontSize(12);
+  doc.text(`Submitted On: ${submittedOn}`, 10, y); y += 10;
+  doc.text(`First Name: ${firstName}`, 10, y); y += 7;
+  doc.text(`Last Name: ${lastName}`, 10, y); y += 7;
+  doc.text(`Email: ${email}`, 10, y); y += 7;
+  doc.text(`Organization: ${companyName || "N/A"}`, 10, y); y += 7;
+  doc.text(`City: ${city}`, 10, y); y += 7;
+  doc.text(`State: ${state}`, 10, y); y += 7;
+  doc.text(`Country: ${country}`, 10, y); y += 7;
+  doc.text(`Pincode: ${pincode}`, 10, y); y += 7;
+  doc.text(`Agreed to NDA: ${agree}`, 10, y); y += 10;
+
+  const ndaText = document.querySelector(".terms-box").innerText;
+  const lines = doc.splitTextToSize(ndaText, 190);
+
+  lines.forEach((line) => {
+    if (y > 280) {
+      doc.addPage();
+      y = 10;
+    }
+    doc.text(line, 10, y);
+    y += 7;
+  });
+
+  doc.save("NDA_Form.pdf");
+};
+
+
 
 
     return (

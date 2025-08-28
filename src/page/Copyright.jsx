@@ -4,15 +4,19 @@ import { Home, Info, FileText, HelpCircle } from "lucide-react"; // icons
 import { Link } from "react-router-dom";
 import Header from "../component/layout/header";
 import PageHeader from "../component/layout/pageheader";
+import Footer from "../component/layout/footer";
+import "../assets/css/Copyright.css";
 
 
-const title = "Trademark";
+
+
+const title = "Copyright";
 
 const Trademark = () => {
   return (
     <>
-    <Header/>
-     <PageHeader title={title} curPage={"Trademark"} />
+      <Header />
+      <PageHeader title={title} curPage={"Copyright"} />
 
       <div className="min-h-screen flex flex-col md:flex-row bg-white bg-opacity-10">
 
@@ -36,170 +40,260 @@ const Trademark = () => {
       </aside> */}
 
         {/* Main Content */}
-        <main className="flex-1 p-4 sm:p-6 md:p-10 flex justify-center">
-          <div className="w-full max-w-md sm:max-w-lg md:max-w-4xl lg:max-w-6xl overflow-y-auto max-h-[90vh]">
+        <main className=" font-sans flex-1 p-4 sm:p-6 md:p-10 flex justify-center">
+          <div className="w-full max-w-md sm:max-w-lg md:max-w-4xl lg:max-w-6xl">
 
             {/* Title */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-8 text-black text-center">
-              Trademark
+              Copyright
             </h1>
 
-            {/* All Boxes */}
-            <div className="space-y-8">
+            {/* Description */}
+            <div className="bg-white text-black p-8 leading-relaxed">
+              <h1 className="text-3xl font-bold mb-6">Introduction – Why Copyright Matters</h1>
 
-              {/* Box Template */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  What is a trademark? What all can be registered as a trademark? What are its advantages/objectives?
-                </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: Trademark (symbolizing a mark in trade) means a mark capable of being represented graphically and which is capable of distinguishing the goods or services of one person from those of others and may include the shape of goods, their packaging, and combination of colors. Essentially it is anything that identifies a brand to a common consumer. <br />
-                  “Mark” includes a device, brand, heading, label, ticket, name, signature, word, letter, numeral, shape of goods, packaging, or combination of colors or any combination thereof. <br />
-                  Examples: <br />
-                  1. Distinctive General Word: Apple <br />
-                  2. Fanciful designation: Kodak <br />
-                  3. Distinctive Personal Names: Ford <br />
-                  4. Slogan: Drink it to believe it (Pepsi), Hum Hain Na! (ICICI Bank) <br />
-                  5. Device <br />
-                  6. Number: 4711 cologne <br />
-                  7. Picture: Lacoste logo <br />
-                  Registering your trademark helps you secure exclusivity over your mark and gives legal rights over third-party infringement.
-                </p>
-              </div>
+              <p className="mb-4">
+                We live in an age where ideas and creativity drive business growth. From books, music, films, and software to digital marketing content, photographs, and packaging—creative works surround us in every industry. But creativity has one major risk: it can be easily copied. A song can be pirated, a book can be reproduced without permission, a software code can be stolen, or a brand’s original design can be duplicated. Such acts not only hurt the creator financially but also damage their brand reputation.
+              </p>
 
+              <p className="mb-4 font-semibold">This is why copyright protection is vital.</p>
 
-              {/* Second Box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Who can apply for a trademark? Where should trademark applications be filed?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer:  An application can be made for registration of a trademark actually used or proposed to be used by any person claiming to be the proprietor of the trademark. In the case of a prior user of the mark, the concerned person is required to submit an affidavit along with evidence to support his claim of priority. In India, for the facilitation of the registration of the trademarks, the Trademark registry operates from five locations i.e. Delhi, Mumbai, Ahmadabad, Kolkata, and Chennai. In the case of Indian applicants, jurisdiction is decided based on the principal place of business of the applicant and in the case of foreign applicants, jurisdiction is based on where an applicant’s agent or attorney is situated.
-                  More info about the jurisdiction and locations of the Trademark registry can be obtained by visiting here.
+              <p className="mb-4">
+                Copyright is a form of intellectual property (IP) that gives creators exclusive legal rights over their original works. These rights allow the creator to decide how their work is used, distributed, reproduced, performed, or adapted. Simply put, copyright ensures that the economic and moral benefits of creativity stay with the rightful owner.
+              </p>
 
+              <h2 className="text-xl font-bold mt-6 mb-2">For example:</h2>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>An author can stop others from copying or selling their book without permission.</li>
+                <li>A software company can stop competitors from illegally using their code.</li>
+                <li>A photographer can license their pictures to clients while preventing misuse.</li>
+                <li>A film producer can earn revenue through broadcasting and streaming rights.</li>
+              </ul>
 
-                </p>
-              </div>
+              <h2 className="text-xl font-bold mt-6 mb-3">For small businesses and startups, copyright matters more than most realize. Many companies invest heavily in websites, advertisements, logos, videos, product catalogs, and software tools—all of which are protectable under copyright. By registering and enforcing these rights, businesses can:</h2>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Build a unique brand identity.</li>
+                <li>Prevent competitors from stealing marketing content.</li>
+                <li>Monetize their creative assets through licensing and royalties.</li>
+                <li>Enhance company valuation since copyright is an intangible asset.</li>
+              </ul>
 
-              {/* third box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  What are the general stages of trademark registration?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  1.	An optional initial trademark search (identical search or similarity search) may be conducted on the government portal. <br />
-                  2.	Once there is a go-ahead for trademark filing, an application for the Trademark will be made through relevant forms provided by the trademark office/ Registrar of Trademarks. <br />
-                  3.	The application is then formally examined by the Indian Trade Marks Office, regarding the mark’s registrability and/or any similarity with existing marks. The mark is examined basically on three grounds i.e. distinctiveness, descriptiveness, and similarity to the prior marks. To qualify for registration, the mark should be distinctive, non-descriptive, and there shouldn’t be any similar prior marks. <br />
-                  4.	In the post-examination process, if the trademark application is considered allowable, the trademark will be advertised in the Trade Marks Journal. <br />
-                  5.	If an objection is raised, an official examination report will be issued to the owner of the mark. To overcome the objection, the trademark holder needs to file a proper legal reply to the Trade Mark Registry in order to overcome the same. <br />
-                  6.	A reply has to be made to the trademark office in lieu of the reports that may be accepted or may be followed by a hearing. The applicant or agent if appointed is required to respond to the examiner’s objection(s) within a period of one month from the date of receipt of the Examination Report. Failure to respond to the examination report within this specified period can lead to the abandonment of the application <br />
-                  7.	If the trademark office is satisfied that the trademark request complies with all the necessary provisions under the act, the mark is advertised before acceptance. The Registry may also call the holder for a personal hearing regarding the acceptability of the mark. <br />
-                  8.	Once the mark is advertised in the trademark journal, it is open for a period of 4 months for third parties to oppose. <br />
-                  9.	If no opposition is received during the specified period, the Trademark is deemed to be registered. <br />
+              <p className="mb-4">
+                At the global level, copyright protection also fuels innovation and cultural development. Artists feel motivated to create new music, writers to publish books, and developers to design software when they know their rights are protected by law.              </p>
 
-                </p>
-              </div>
-
-              {/* forth box  */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Is the registration of a trademark compulsory?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: No. Registration of a trademark is not compulsory. However, the registration is the prima facie evidence of the proprietorship of the trademark under registration. However, it is to be noted that no suit can be instituted for the infringement of unregistered trademarks. For unregistered marks, action can be brought against any person for passing off goods or services as the goods of another person or as services provided by another person.
-                </p>
-              </div>
-
-              {/* fifth box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Can a registered trademark be amended at later date?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: Yes, the filed mark is allowed to be amended as per the provision of Section 22 of the Trademarks Act, which allows the amendment of the mark provided it does not amount to a substantial change in the character of the mark as such. Any superficial or insignificant character or feature of the said mark is allowed to be amended if a request is filed in the prescribed format along with 16 copies of the amended label mark.
-
-
-                </p>
-              </div>
-
-              {/* sixth box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  What are the modes of filing trademarks internationally? Can a foreign applicant claim the priority based on an earlier application?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: One can directly file a trademark in the jurisdiction of interest with or without taking priority of domestic mark. Another mode of international registration of a trademark is facilitated through the Madrid Protocol which acts as a vehicle to enable registration in multiple countries taking priority of one of the countries. This priority has to be claimed within six months. Please note that not all countries are members of the Madrid Protocol and allow filing through this system. A list of jurisdictions that can be accessed through Madrid Protocol for filing trademarks is available here
-                </p>
-              </div>
-
-              {/* seventh box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Once registered for what period of time, a trademark is effective? Can a trademark registration be renewed?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: The registration of a trademark is valid for a period of 10 years. It can be renewed every 10 years, perpetually. In India, a renewal request is to be filed in FORM TM-R within one year before the expiry of the last registration of the trademark. The renewal fee for physical filling is 10,000 while for e-Filling is 9,000. If the renewal fee is not paid till the expiration of the last registration, a surcharge has to be paid along with the prescribed fee accompanied to form TM-R. If the renewal fee along with surcharge is not paid till the expiry of six months after the expiration of the last registration, the trademark is liable to be removed. Once removed, restoration of a trademark can be requested in form TM-R along with prescribed fees and applicable renewal fees (physical filling: 10,000, e-Filling: 9000). TM-R can be filed within one year from the expiration of the last registration of the trademark
-                </p>
-              </div>
-
-              {/* eighth box */}
-
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Is the trademark liable for removal on the ground of non-use?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: Yes, a registered trademark can be removed on the basis of non-use. Except as excused in clause 3 of section 47 of trademarks act, 1999, a trademark may be removed on the ground of non-use if:
-                  1. That the trademark was registered without any bona fide intention and was not used till date three months before the date of the application for removal; or <br />
-                  2. Trademark was not used for a continuous period of five years from the date of registration of trademark and application was made after three months from the expiry of five years. <br />
-
-
-                </p>
-              </div>
-
-              {/* nintth box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Is the sound or smell registrable as a trademark? How are these marks specified?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: Yes, sounds or smells are registrable as a mark. However, they should be capable of being reproduced graphically and should be distinctive. For sound marks, the reproduction of the same has to be submitted in the MP3 format not exceeding thirty seconds’ length recorded along with a graphical representation of its notations. The smell can be represented as chemical formula along with the sample. Eg. the 4711 cologne
-                </p>
-              </div>
-
-              {/* tenth box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  Is a three-dimensional mark registrable?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: Yes, a three-dimensional mark is registrable.
-                </p>
-              </div>
-
-              {/* eleventh box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  What is the classification of goods adopted in India?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: International Classification of goods and services (Nice Classification) is adopted in India.
-                </p>
-              </div>
-              {/* twelfth box */}
-              <div className="bg-white/10 backdrop-blur-md border border-gray-300 rounded-2xl shadow-xl p-6 sm:p-8 md:p-10">
-                <p className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-black break-words">
-                  What are the grounds for the refusal of registration of a trademark?              </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-semibold text-black px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-xl shadow-lg leading-relaxed break-words">
-                  Answer: Section 9 of the trademarks act, 1999 provides absolute grounds, and section 11 provides relative grounds for refusal of registration of India. Trademark laws mandate trademarks to be distinctive and non-descriptive in order to get registered. The rationale behind this provision is that non-distinctive or descriptive marks can’t be granted monopoly being generic to the trade and are open for public use without any exclusive rights over the same. Some of the examples of non-distinctive or descriptive marks are given below: <br />
-                  1. Dalal street for financial services <br />
-                  2. Best restaurant for food services <br />
-
-                </p>
-              </div>
-
-              {/* Repeat remaining boxes similarly with content unchanged, just text-black and bg-white/10 */}
-              {/* You can copy your remaining 13 boxes and just replace classes with: */}
-              {/* text-black, bg-white/10, border-gray-300, remove gradients and animate-pulse */}
-
+              <p className="font-bold mt-6">
+                In short, copyright is not just a legal tool—it is an economic enabler. It protects the creativity of individuals, supports the growth of businesses, and strengthens a country’s creative economy.              </p>
             </div>
+            <div className="copyright-article">
+              <h1>Copyright – Questions & Answers</h1>
+
+              {/* Q1 */}
+              <div className="qa-block">
+                <h3 className="question">Q1: What is Copyright?</h3>
+                <p className="answer">
+                  Copyright is a legal right that protects the original expression of ideas
+                  in a tangible form such as writing, art, music, films, photography, or software.
+                  It does not protect the idea itself, but the way it is expressed.
+                </p>
+                <div className="example">
+                  👉 Example: If two people write books on “time management,” copyright
+                  protects the exact words, sentences, and structure used by each author,
+                  but not the idea itself.
+                </div>
+                <ul className="answer">
+                  <li>The exclusive right to reproduce, distribute, perform, translate, adapt, or display the work.</li>
+                  <li>The power to permit or prohibit others from using it.</li>
+                  <li>The ability to earn royalties or transfer rights.</li>
+                </ul>
+              </div>
+
+              {/* Q2 */}
+              <div className="qa-block">
+                <h3 className="question">Q2: What Can Be Protected Under Copyright?</h3>
+                <p className="answer">
+                  Copyright protects a wide range of creative works in literary, artistic, and digital fields.
+                </p>
+                <ul className="answer">
+                  <li>Literary works – Books, articles, poems, software, research papers.</li>
+                  <li>Artistic works – Paintings, drawings, sculptures, photographs, architecture.</li>
+                  <li>Musical works – Songs, compositions, lyrics.</li>
+                  <li>Cinematographic works – Films, videos, documentaries, web series.</li>
+                  <li>Dramatic works – Scripts, plays, choreography.</li>
+                  <li>Sound recordings – Podcasts, speeches, albums.</li>
+                  <li>Digital content – Websites, blogs, social media content, ads.</li>
+                </ul>
+                <div className="example">
+                  👉 In business use: Company brochures, catalogs, websites, logos, jingles, and software.
+                </div>
+              </div>
+
+              {/* Q3 */}
+              <div className="qa-block">
+                <h3 className="question">Q3: What Cannot Be Protected by Copyright?</h3>
+                <ul className="answer">
+                  <li>Ideas, methods, systems.</li>
+                  <li>Facts and data.</li>
+                  <li>Official government works (laws, judgments).</li>
+                  <li>Names, titles, slogans, short phrases (→ Trademark).</li>
+                  <li>Common symbols or designs.</li>
+                  <li>Unwritten/unrecorded works.</li>
+                </ul>
+                <div className="example">
+                  👉 Example: You can’t copyright the idea of “a love story,” but you can
+                  copyright your specific script and dialogues.
+                </div>
+              </div>
+
+              {/* Q4 */}
+              <div className="qa-block">
+                <h3 className="question">Q4: Who Owns Copyright?</h3>
+                <p className="answer">Ownership depends on who creates the work and the circumstances.</p>
+                <ul className="answer">
+                  <li>Author/creator is usually the first owner.</li>
+                  <li>Employee works → employer owns copyright (if created during job).</li>
+                  <li>Commissioned work → depends on contract (e.g., wedding photographer).</li>
+                  <li>Joint authorship → shared rights unless agreed otherwise.</li>
+                  <li>Government/corporate works → organization owns copyright.</li>
+                </ul>
+                <div className="example">
+                  👉 Example: A designer hired by a company → copyright belongs to the company.
+                </div>
+              </div>
+
+              {/* Q5 */}
+              <div className="qa-block">
+                <h3 className="question">Q5: Duration of Copyright</h3>
+                <p className="answer">
+                  In India: Life of the author + 60 years.
+                  In US/EU: Life + 70 years, corporate works 95–120 years.
+                </p>
+                <div className="example">
+                  👉 Example: If an author dies in 2025, copyright continues until 2085 (India).
+                </div>
+              </div>
+
+              {/* Q6 */}
+              <div className="qa-block">
+                <h3 className="question">Q6: How to Register Copyright?</h3>
+                <ul className="answer">
+                  <li>Application Filing (online portal).</li>
+                  <li>Diary Number Allotment.</li>
+                  <li>30-day Waiting Period.</li>
+                  <li>Examination & hearings (if objections).</li>
+                  <li>Registration Certificate issued.</li>
+                </ul>
+                <div className="example">👉 Average timeline: 3–8 months.</div>
+              </div>
+
+              {/* Q7 */}
+              <div className="qa-block">
+                <h3 className="question">Q7: What Documents Are Required?</h3>
+                <ul className="answer">
+                  <li>Application Form & Statement of Particulars.</li>
+                  <li>Copies of the work.</li>
+                  <li>No Objection Certificate (if multiple contributors).</li>
+                  <li>ID proof of applicant/author.</li>
+                  <li>Power of Attorney (if agent involved).</li>
+                </ul>
+              </div>
+
+              {/* Q8 */}
+              <div className="qa-block">
+                <h3 className="question">Q8: Costs Involved</h3>
+                <ul className="answer">
+                  <li>Literary works – ₹500 (individual), ₹2000 (company).</li>
+                  <li>Cinematographic films – ₹5000.</li>
+                  <li>Sound recordings – ₹2000.</li>
+                  <li>Software – ₹500.</li>
+                </ul>
+              </div>
+
+              {/* Q9 */}
+              <div className="qa-block">
+                <h3 className="question">Q9: Do You Need Registration?</h3>
+                <p className="answer">
+                  NO. Copyright exists automatically when work is created.
+                  But registration = legal proof, easier enforcement, public record.
+                </p>
+                <div className="example">
+                  👉 Example: A poem in your notebook is already copyrighted.
+                </div>
+              </div>
+
+              {/* Q10 */}
+              <div className="qa-block">
+                <h3 className="question">Q10: How Does Copyright Apply in Different Works?</h3>
+                <ul className="answer">
+                  <li>📚 Books – protects words, not ideas.</li>
+                  <li>🎵 Music – lyrics, composition, sound recording.</li>
+                  <li>💻 Software – source code, docs (not algorithms).</li>
+                  <li>🎬 Films – script, dialogues, cinematography.</li>
+                  <li>📸 Photography – original photos/artworks.</li>
+                </ul>
+              </div>
+
+              {/* Q11 */}
+              <div className="qa-block">
+                <h3 className="question">Q11: What Is International Protection?</h3>
+                <p className="answer">
+                  Through Berne Convention (178+ countries). Principles:
+                </p>
+                <ul className="answer">
+                  <li>Automatic protection (no formalities).</li>
+                  <li>National treatment (same rights abroad).</li>
+                  <li>Minimum standards (life + 50 years).</li>
+                </ul>
+              </div>
+
+              {/* Q12 */}
+              <div className="qa-block">
+                <h3 className="question">Q12: What Is Copyright Infringement?</h3>
+                <ul className="answer">
+                  <li>Copying books, music, movies illegally.</li>
+                  <li>Using images without permission.</li>
+                  <li>Software piracy.</li>
+                  <li>Uploading films/songs without license.</li>
+                </ul>
+                <p className="answer">
+                  Penalties in India: Jail (6 months–3 years) + Fine ₹50,000–₹2,00,000.
+                </p>
+              </div>
+
+              {/* Q13 */}
+              <div className="qa-block">
+                <h3 className="question">Q13: How to Avoid Infringement?</h3>
+                <ul className="answer">
+                  <li>✅ Use original or licensed content.</li>
+                  <li>✅ Buy stock photos/videos/music.</li>
+                  <li>❌ Don’t copy Google images.</li>
+                  <li>❌ Don’t use pirated software/movies.</li>
+                </ul>
+              </div>
+
+              {/* Q14 */}
+              <div className="qa-block">
+                <h3 className="question">Q14: What Are Licensing, Assignment & Royalties?</h3>
+                <p className="answer">
+                  Copyright is also a business asset.
+                </p>
+                <ul className="answer">
+                  <li>📜 Licensing – Owner allows usage (exclusive / non-exclusive).</li>
+                  <li>📜 Assignment – Full ownership transferred.</li>
+                  <li>💰 Royalties – Payments for usage (music, books, software).</li>
+                  <li>💼 Commercialization – revenue via streaming, merchandising, etc.</li>
+                </ul>
+              </div>
+            </div>
+
+
 
           </div>
         </main>
       </div>
-      </>
-      );
-    
+      <Footer />
+    </>
+  );
+
 };
 
 export default Trademark;

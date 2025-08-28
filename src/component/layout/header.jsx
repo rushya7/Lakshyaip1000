@@ -44,7 +44,7 @@ const Header = () => {
   </p> */}
 
                             {/* Address */}
-                            <p className="flex items-center gap-3 text-xl font-extrabold bg-gradient-to-r from-indigo-600 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                            <p className="flex items-center gap-3 text-xl font-extrabold text-black">
                                 <span className="text-2xl">∞</span>
                                 1000 Patents. Infinite Possibilities
                             </p>
@@ -86,18 +86,18 @@ const Header = () => {
 
                         <div className="menu-area">
                             <div className="menu">
-                                
+
                                 <ul className={`lab-ul ${menuToggle ? "active" : ""}`}>
                                     <li className="menu-item-has-children">
                                         <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Home</a>
                                         <ul className="lab-ul dropdown-menu">
                                             {/* <li><NavLink to="/">Home One</NavLink></li> */}
-                                            <li><NavLink to="#/index-2">About Us</NavLink></li>
-                                            <li><NavLink to="#/index-3">Road map</NavLink></li>
-                                            <li><NavLink to="#/index-4">Programs</NavLink></li>
-                                            <li><NavLink to="#/index-5">Instructor</NavLink></li>
-                                            <li><NavLink to="#/index-6">Program Details</NavLink></li>
-                                            {/* <li><NavLink to="/index-7">Home Seven</NavLink></li> */}
+                                            <li><NavLink to="/index-2">About Us</NavLink></li>
+                                            <li><NavLink to="/index-3">Road map</NavLink></li>
+                                            <li><NavLink to="/index-4">Programs</NavLink></li>
+                                            <li><NavLink to="/index-5">Instructor</NavLink></li>
+                                            <li><NavLink to="/index-6">Program Details</NavLink></li>
+                                            <li><NavLink to="/index-7">Home Seven</NavLink></li>
                                         </ul>
                                     </li>
                                     <li className="menu-item-has-children">
@@ -118,8 +118,8 @@ const Header = () => {
                                     <li className="menu-item-has-children">
                                         <a href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,0">Events</a>
                                         <ul className="lab-ul dropdown-menu">
-                                            <li><NavLink to="#/blog">Event</NavLink></li>
-                                            <li><NavLink to="#/blog-2">Event Details</NavLink></li>
+                                            <li><NavLink to="/blog">Event</NavLink></li>
+                                            <li><NavLink to="/blog-2">Event Details</NavLink></li>
                                             {/* <li><NavLink to="/blog-3">Blog Style 3</NavLink></li>
                                             <li><NavLink to="/blog-single">Blog Single</NavLink></li> */}
                                         </ul>

@@ -4,7 +4,7 @@ import HeaderTwo from "../component/layout/header-2";
 import AboutTwo from "../component/section/about-2";
 import AchievementTwo from "../component/section/achievement-2";
 import BannerTwo from "../component/section/banner-2";
-import Blog from "../component/section/blog";
+import Blog from "../component/section/EventGallery";
 import CategoryTwo from "../component/section/category-2";
 import CourseTwo from "../component/section/course-2";
 import Instructor from "../component/section/instructor";

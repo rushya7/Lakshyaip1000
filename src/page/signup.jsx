@@ -34,12 +34,16 @@ const SignupPage = () => {
       const res = await fetch("http://localhost:5000/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: formData.name, email: formData.email, password: formData.password }),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          password: formData.password,
+        }),
       });
 
+      const data = await res.json();
       if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
-        throw new Error(err?.message || `Signup failed with status ${res.status}`);
+        throw new Error(data.error || `Signup failed with status ${res.status}`);
       }
 
       navigate("/admin-create-user");
@@ -55,7 +59,7 @@ const SignupPage = () => {
     <Fragment>
       <Header />
       <PageHeader title={title} curPage={'Sign Up'} />
-      
+
       <div className="bg-gradient-to-r from-sky-200 to-indigo-200 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 space-y-6">
           <h2 className="text-center text-3xl font-extrabold text-gray-800">{title}</h2>
@@ -117,7 +121,7 @@ const SignupPage = () => {
             <h5 className="mt-4 text-gray-700">{socialTitle}</h5>
             <ul className="flex justify-center space-x-4 mt-2">
               {socialList.map((val, i) => (
-                <li key={i}>
+                <li key={val.iconName}>
                   <a href={val.link} target="_blank" rel="noopener noreferrer"
                      className={`text-2xl ${val.className} transition-transform transform hover:scale-110`}>
                     <i className={val.iconName}></i>
